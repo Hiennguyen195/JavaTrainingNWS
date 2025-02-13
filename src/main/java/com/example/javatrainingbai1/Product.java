@@ -1,10 +1,10 @@
 package com.example.javatrainingbai1;
 
 public class Product{
-    private String name;
-    private Integer price;
-    private String category;
-    private Integer stock;
+     static String name;
+     static double price;
+     static String category;
+     static int stock;
 
     public Product(String name, Integer price, String category, Integer stock) {
         this.name = name;
@@ -17,7 +17,7 @@ public class Product{
         return name;
     }
 
-    public Integer getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -25,7 +25,7 @@ public class Product{
         return category;
     }
 
-    public Integer getStock() {
+    public int getStock() {
         return stock;
     }
 
@@ -33,7 +33,7 @@ public class Product{
         this.name = name;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -41,7 +41,7 @@ public class Product{
         this.category = category;
     }
 
-    public void setStock(Integer stock) {
+    public void setStock(int stock) {
         this.stock = stock;
     }
 
