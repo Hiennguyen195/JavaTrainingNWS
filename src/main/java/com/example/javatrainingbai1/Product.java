@@ -6,6 +6,7 @@ public class Product{
      static String category;
      static int stock;
 
+
     public Product(String name, Integer price, String category, Integer stock) {
         this.name = name;
         this.price = price;
@@ -47,9 +48,7 @@ public class Product{
 
     @Override
     public String toString() {
-        return  "Tên sản phẩm: " + name + '\n' +
-                "Giá sản phẩm: " + price + " vnđ" + '\n' +
-                "Danh mục sản phẩm: " + category + '\n' +
-                "Số lượng trong kho: " + stock ;
+        return "Product{name='" + name + "', price=" + Math.round(price) + " vnđ" +
+                ", category='" + category + "', quantity=" + stock + "}";
     }
 }

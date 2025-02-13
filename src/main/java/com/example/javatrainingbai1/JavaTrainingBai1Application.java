@@ -7,19 +7,30 @@ import java.util.Scanner;
 import javax.print.attribute.standard.PrinterURI;
 import javax.swing.JOptionPane;
 import java.util.Random;
+import java.util.List;
+import java.util.ArrayList;
 
 @SpringBootApplication
 public class JavaTrainingBai1Application {
 
     public static void main(String[] args) {
 
-        // Bài 1:
-        Scanner sc = new Scanner(System.in);
+
         SpringApplication.run(JavaTrainingBai1Application.class, args);
-        Product koKoMi = new Product("Kokomi", 12000, "Mỳ tôm", 500);
-        System.out.println(koKoMi.toString() + '\n');
-        Product trungNguyen_g7 = new Product("G7", 35000,"Cà phê",200);
-        System.out.println(trungNguyen_g7.toString() + '\n');
+        Scanner sc = new Scanner(System.in);
+        // Bài 1:
+        Product p1 = new Product("Kokomi", 12000, "Mỳ tôm", 500);
+        Product p2 = new Product("HaoHao", 10000,"Mỳ tôm",200);
+        Product p3 = new Product("G7", 20000, "Cà phê", 300);
+
+        ArrayList<Product> products_List = new ArrayList<>();
+        products_List.add(p1);
+        products_List.add(p2);
+        products_List.add(p3);
+
+        for (Product product : products_List) {
+            System.out.println(product);
+        }
 
         // Bài 2:
         User u1= new User();

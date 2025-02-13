@@ -1,6 +1,9 @@
 package com.example.javatrainingbai1;
 
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+
 public class Cart {
 
     int cart_product_Quantity;
@@ -15,6 +18,10 @@ public class Cart {
         addProduct = sc.nextLine();
         System.out.print("Enter Product Quantity: ");
         quantity = sc.nextInt();
+
+        // Tạo list quản lí sản phẩm có trong giỏ hàng
+        List<String> list = new ArrayList<>();
+        list.add(Product.name);
 
         cart_product_Name = addProduct;
         cart_product_Quantity = quantity;
