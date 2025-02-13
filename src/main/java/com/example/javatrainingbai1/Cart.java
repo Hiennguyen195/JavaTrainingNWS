@@ -5,7 +5,26 @@ public class Cart {
     String addName;
     int addQuantity;
 
-    // Phương thức trả lại giá của sản phẩm
+    // Phương thức thêm sản phẩm vào giỏ hàng add_Product()
+    public void add_Product(String product, int quantity){
+        Scanner sc = new Scanner(System.in);
+
+        int product_quantity = 0;
+        System.out.print("Nhập tên sản phẩm bạn muốn thêm vào giỏ: ");
+        product = sc.nextLine();
+        System.out.print("Enter Product Quantity: ");
+        quantity = sc.nextInt();
+
+        if (product.equals(Product.name)){
+            product_quantity = product_quantity + quantity;
+            System.out.println("Bạn đã thêm " + product_quantity + " sản phẩm " + Product.category+ " " + product + " vào giỏ hàng!");
+        }
+        else {
+            System.out.println("Sản phẩm không tồn tại! Xin vui lòng nhập lại!");
+        }
+    }
+
+    // Phương thức trả lại giá của sản phẩm get_total_price
     public double get_total_Price() {
         if (getAddName().equals(Product.name)) {
             double addPrice = Product.price * addQuantity;

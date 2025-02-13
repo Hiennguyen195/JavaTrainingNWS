@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Scanner;
+import javax.print.attribute.standard.PrinterURI;
 import javax.swing.JOptionPane;
 import java.util.Random;
 
@@ -15,8 +16,10 @@ public class JavaTrainingBai1Application {
         // Bài 1:
         Scanner sc = new Scanner(System.in);
         SpringApplication.run(JavaTrainingBai1Application.class, args);
-        Product HaoHao = new Product("haohao", 12000, "Mỳ tôm", 500);
-        System.out.println(HaoHao.toString() + '\n');
+        Product haoHao = new Product("haohao", 12000, "Mỳ tôm", 500);
+        System.out.println(haoHao.toString() + '\n');
+        Product trungNguyen_g7 = new Product("G7", 35000,"Cà phê",200);
+        System.out.println(trungNguyen_g7.toString() + '\n');
 
         // Bài 2:
         User u1= new User();
@@ -34,16 +37,19 @@ public class JavaTrainingBai1Application {
         }
 
         // Bài 3:
-        Cart c1 = new Cart();
-        System.out.println("Nhập tên sản phẩm bạn muốn thêm vào giỏ hàng: ");
-        c1.setAddName(sc.next());
-        System.out.println("Giá của sản phẩm là: " + Math.round(HaoHao.getPrice()) + " vnđ\n");
-        sc.nextLine();
-        System.out.print("Nhập số lượng bạn muốn thêm: ");
-        c1.setAddQuantity(Integer.parseInt(sc.next()));
-        System.out.print("Số tiền mà bạn phải trả là: ");
-        System.out.println(Math.round(c1.get_total_Price()) + " vnđ\n");
-        sc.nextLine();
+//        Cart c1 = new Cart();
+//        System.out.println("Nhập tên sản phẩm bạn muốn thêm vào giỏ hàng: ");
+//        c1.setAddName(sc.next());
+//        System.out.println("Giá của sản phẩm là: " + Math.round(haoHao.getPrice()) + " vnđ\n");
+//        sc.nextLine();
+//        System.out.print("Nhập số lượng bạn muốn thêm: ");
+//        c1.setAddQuantity(Integer.parseInt(sc.next()));
+//        System.out.print("Số tiền mà bạn phải trả là: ");
+//        System.out.println(Math.round(c1.get_total_Price()) + " vnđ\n");
+//        sc.nextLine();
+
+        Cart c2= new Cart();
+        c2.add_Product(null, 0);
     }
 
 }
