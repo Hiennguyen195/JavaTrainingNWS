@@ -31,19 +31,5 @@ public class Cart {
         System.out.println("Số tiền mà bạn phải trả là: " + addPrice + " vnđ\n");
     }
 }
-//    public int getAddQuantity() {
-//        return addQuantity;
-//    }
-//
-//    public void setAddQuantity(int addQuantity) {
-//        this.addQuantity = addQuantity;
-//    }
-//
-//    public String getAddName() {
-//        return addName;
-//    }
-//
-//    public void setAddName(String addName) {
-//        this.addName = addName;
-//    }
+
 
