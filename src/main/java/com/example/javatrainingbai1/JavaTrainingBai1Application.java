@@ -51,6 +51,8 @@ public class JavaTrainingBai1Application {
         Cart c2= new Cart();
         c2.add_Product(null, 0);
         c2.get_total_Price();
+        c2.remove_Product(null);
+        c2.get_total_Price();
     }
 
 }
