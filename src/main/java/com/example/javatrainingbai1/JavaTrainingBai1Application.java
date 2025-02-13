@@ -37,22 +37,11 @@ public class JavaTrainingBai1Application {
         }
 
         // Bài 3:
-//        Cart c1 = new Cart();
-//        System.out.println("Nhập tên sản phẩm bạn muốn thêm vào giỏ hàng: ");
-//        c1.setAddName(sc.next());
-//        System.out.println("Giá của sản phẩm là: " + Math.round(haoHao.getPrice()) + " vnđ\n");
-//        sc.nextLine();
-//        System.out.print("Nhập số lượng bạn muốn thêm: ");
-//        c1.setAddQuantity(Integer.parseInt(sc.next()));
-//        System.out.print("Số tiền mà bạn phải trả là: ");
-//        System.out.println(Math.round(c1.get_total_Price()) + " vnđ\n");
-//        sc.nextLine();
-
-        Cart c2= new Cart();
-        c2.add_Product(null, 0);
-        c2.get_total_Price();
-        c2.remove_Product(null);
-        c2.get_total_Price();
+        Cart c1= new Cart();
+        c1.add_Product(null, 0);
+        c1.get_total_Price();
+        c1.remove_Product(null);
+        c1.get_total_Price();
     }
 
 }
