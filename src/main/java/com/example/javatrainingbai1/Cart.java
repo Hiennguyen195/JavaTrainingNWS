@@ -6,7 +6,7 @@ public class Cart {
     int addQuantity;
 
     // Phương thức trả lại giá của sản phẩm
-    public double returnPrice() {
+    public double get_total_Price() {
         if (getAddName().equals(Product.name)) {
             double addPrice = Product.price * addQuantity;
             return addPrice;
@@ -33,22 +33,3 @@ public class Cart {
         this.addName = addName;
     }
 }
-
-
-
-//class add_Product {
-//    Scanner sc = new Scanner(System.in);
-//
-//    public void addProduct() {
-//        System.out.println("Enter product name: ");
-//        String name = sc.nextLine();
-//        System.out.println("Enter quantity: ");
-//        int quantity = sc.nextInt();
-//        double addPrice = Product.price * quantity;
-//
-//        Cart cart = new Cart(name, 0, null, null);
-//        cart.setName(name);
-//        cart.quantity = quantity;
-//        cart.price = addPrice;
-//    }
-//}

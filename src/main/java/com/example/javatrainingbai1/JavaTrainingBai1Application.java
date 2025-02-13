@@ -42,7 +42,7 @@ public class JavaTrainingBai1Application {
         System.out.print("Nhập số lượng bạn muốn thêm: ");
         c1.setAddQuantity(Integer.parseInt(sc.next()));
         System.out.print("Số tiền mà bạn phải trả là: ");
-        System.out.println(Math.round(c1.returnPrice()) + " vnđ\n");
+        System.out.println(Math.round(c1.get_total_Price()) + " vnđ\n");
         sc.nextLine();
     }
 
