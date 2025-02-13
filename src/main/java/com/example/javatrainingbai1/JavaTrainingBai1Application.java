@@ -16,8 +16,8 @@ public class JavaTrainingBai1Application {
         // Bài 1:
         Scanner sc = new Scanner(System.in);
         SpringApplication.run(JavaTrainingBai1Application.class, args);
-        Product haoHao = new Product("haohao", 12000, "Mỳ tôm", 500);
-        System.out.println(haoHao.toString() + '\n');
+        Product koKoMi = new Product("Kokomi", 12000, "Mỳ tôm", 500);
+        System.out.println(koKoMi.toString() + '\n');
         Product trungNguyen_g7 = new Product("G7", 35000,"Cà phê",200);
         System.out.println(trungNguyen_g7.toString() + '\n');
 
@@ -50,6 +50,8 @@ public class JavaTrainingBai1Application {
 
         Cart c2= new Cart();
         c2.add_Product(null, 0);
+        System.out.print("Số tiền mà bạn phải trả là: ");
+        System.out.println(Math.round(c2.get_total_Price()) + " vnđ\n");
     }
 
 }

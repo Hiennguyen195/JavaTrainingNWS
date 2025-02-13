@@ -15,6 +15,7 @@ public class Cart {
         System.out.print("Enter Product Quantity: ");
         quantity = sc.nextInt();
 
+        addQuantity = quantity;
         if (product.equals(Product.name)){
             product_quantity = product_quantity + quantity;
             System.out.println("Bạn đã thêm " + product_quantity + " sản phẩm " + Product.category+ " " + product + " vào giỏ hàng!");
@@ -24,16 +25,11 @@ public class Cart {
         }
     }
 
+
     // Phương thức trả lại giá của sản phẩm get_total_price
     public double get_total_Price() {
-        if (getAddName().equals(Product.name)) {
             double addPrice = Product.price * addQuantity;
             return addPrice;
-        }
-        else {
-            System.out.println("Sản phẩm không tồn tại!");
-        }
-        return 0;
     }
 
     public int getAddQuantity() {
