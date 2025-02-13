@@ -50,8 +50,7 @@ public class JavaTrainingBai1Application {
 
         Cart c2= new Cart();
         c2.add_Product(null, 0);
-        System.out.print("Số tiền mà bạn phải trả là: ");
-        System.out.println(Math.round(c2.get_total_Price()) + " vnđ\n");
+        c2.get_total_Price();
     }
 
 }
