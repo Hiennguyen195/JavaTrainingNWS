@@ -1,19 +1,24 @@
 package com.example.javatrainingbai1;
 
-public class Product{
-     static String name;
-     static double price;
-     static String category;
-     static int stock;
+public class Product {
+    private String name;
+    private double price;
+    private String category;
+    private int stock;
 
-
-    public Product(String name, Integer price, String category, Integer stock) {
+    //Main constructor
+    public Product(String name, int price, String category, int stock) {
         this.name = name;
         this.price = price;
         this.category = category;
         this.stock = stock;
     }
 
+    //Sub constructor
+    public Product() {
+    }
+
+    //Getter
     public String getName() {
         return name;
     }
@@ -29,7 +34,7 @@ public class Product{
     public int getStock() {
         return stock;
     }
-
+    //Setter
     public void setName(String name) {
         this.name = name;
     }
@@ -48,7 +53,8 @@ public class Product{
 
     @Override
     public String toString() {
-        return "Product{name='" + name + "', price=" + Math.round(price) + " vnđ" +
-                ", category='" + category + "', quantity=" + stock + "}";
+        return "Product{name= '" + name + "', price= " + Math.round(price) + " vnđ" +
+                ", category= '" + category + "', stock= " + stock + "}";
     }
 }
+

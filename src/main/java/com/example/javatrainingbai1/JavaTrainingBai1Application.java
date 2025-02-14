@@ -3,10 +3,8 @@ package com.example.javatrainingbai1;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Locale;
 import java.util.Scanner;
-import javax.print.attribute.standard.PrinterURI;
-import javax.swing.JOptionPane;
-import java.util.Random;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -14,26 +12,16 @@ import java.util.ArrayList;
 public class JavaTrainingBai1Application {
 
     public static void main(String[] args) {
-
-
         SpringApplication.run(JavaTrainingBai1Application.class, args);
         Scanner sc = new Scanner(System.in);
+
         // Bài 1:
-        Product p1 = new Product("Kokomi", 12000, "Mỳ tôm", 500);
-        Product p2 = new Product("HaoHao", 10000,"Mỳ tôm",200);
-        Product p3 = new Product("G7", 20000, "Cà phê", 300);
-
-        ArrayList<Product> products_List = new ArrayList<>();
-        products_List.add(p1);
-        products_List.add(p2);
-        products_List.add(p3);
-
-        for (Product product : products_List) {
-            System.out.println(product);
-        }
+        ProductManager productManager = new ProductManager();
+        productManager.initProducts();
+        productManager.printOut_productList();
 
         // Bài 2:
-        User u1= new User();
+        User u1 = new User();
         System.out.println("Tên đăng nhập: ");
         u1.setuserName(sc.next());
         System.out.println("Mật khẩu: ");
@@ -49,10 +37,10 @@ public class JavaTrainingBai1Application {
 
         // Bài 3:
         Cart c1= new Cart();
-        c1.add_Product(null, 0);
-        c1.get_total_Price();
-        c1.remove_Product(null);
-        c1.get_total_Price();
+        c1.add_Product();
+//        c1.get_total_Price();
+//        c1.remove_Product(null);
+//        c1.get_total_Price();
     }
 
 }
