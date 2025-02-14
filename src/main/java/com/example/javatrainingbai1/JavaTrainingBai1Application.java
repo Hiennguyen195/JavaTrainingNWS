@@ -28,7 +28,7 @@ public class JavaTrainingBai1Application {
         u1.setpassword(sc.next());
         u1.setemail(u1.getuserName() + "@gmail.com\n");
 
-        if (LoginSystem.CheckLogin(u1.getuserName(), u1.getpassword())){
+        if (UserManager.CheckLogin(u1.getuserName(), u1.getpassword())){
             System.out.println("Đăng nhập thành công!\n");
             u1.showInfo();
         } else{
