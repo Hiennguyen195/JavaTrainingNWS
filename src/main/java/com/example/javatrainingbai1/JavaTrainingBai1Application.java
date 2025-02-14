@@ -21,23 +21,13 @@ public class JavaTrainingBai1Application {
         productManager.printOut_productList();
 
         // Bài 2:
-        User u1 = new User();
-        System.out.println("Tên đăng nhập: ");
-        u1.setuserName(sc.next());
-        System.out.println("Mật khẩu: ");
-        u1.setpassword(sc.next());
-        u1.setemail(u1.getuserName() + "@gmail.com\n");
-
-        if (UserManager.CheckLogin(u1.getuserName(), u1.getpassword())){
-            System.out.println("Đăng nhập thành công!\n");
-            u1.showInfo();
-        } else{
-            System.out.println("Đăng nhập thất bại!\n" );
-        }
+        UserManager user_manager = new UserManager();
+        user_manager.initUser();
+        user_manager.loginUser();
 
         // Bài 3:
-        Cart c1= new Cart();
-        c1.add_Product();
+//        Cart c1= new Cart();
+//        c1.add_Product();
 //        c1.get_total_Price();
 //        c1.remove_Product(null);
 //        c1.get_total_Price();

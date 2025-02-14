@@ -1,4 +1,5 @@
 package com.example.javatrainingbai1;
+import java.util.Scanner;
 
 public class User {
     private String userName;
